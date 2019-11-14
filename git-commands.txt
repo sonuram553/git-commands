@@ -1,0 +1,58 @@
+git config              ----------> .git/config     in current working directory.
+git config --global     ----------> ~/.gitconfig 
+git config --system     ----------> /etc/gitconfig
+git config --list   list all configurations.
+
+git help <verb>     show manual page for the verb(like config, add and branch)
+
+git init    initialize git repository in local directory
+
+git clone <url>  url of remote git repository
+git clone <url> <newDirectoryName>
+
+git status --short(or -s)
+
+
+---------------- Date 11 nov 2019 ---------------
+git diff
+git diff --staged(or --cached)
+
+git commit
+git commit -v   to also log the difference in the file.
+git commit -a   commit tracked file directly without using git add command.
+
+git rm  to remove file from staging area as well as from current working directory
+        and stage the deletion
+git rm --cached <fileName>  to remove file from staging area
+
+
+---------------- Date 13 nov 2019 ---------------
+git mv <from-filename> <to-filename>    used to rename or move a file in git
+
+git log
+git log -p      -p flag will show the difference between commits.
+git log -p -2   -2 flag will limit the output to last 2 entries. It can be any natural number
+git log --stat   shows commits with brief status about files addition or deletion
+git log --oneline
+git log --pretty=format:"%h - %an, %ar: %s"    see options.png file
+git log --pretty=format:"%h %s" --graph     graph flag will show line diagram of commits
+git log -Sfunction_name     -S option will show the last commit that modified function_name.
+git log --<path>    here path is the name of file or directory to limit commits associated with that file
+git log --since=2.weeks
+git log --author
+git log --grep
+git log --author --grep --all-match
+example command      git log --pretty="%h - %s" --author=gitster --since="2008-10-01" \
+
+
+---------------- Date 14 nov 2019 ---------------
+git remote  to see all remote servers configured for repository
+git remote -v   shows the url of remote servers
+git remote add <shortname> <url>
+git remote show <remote-name>   show details of remote name
+
+git fetch <remote-name or url>     to fetch from remote repository to local repository
+
+git pull    fetch from remote repository and merge to local repository
+
+git push <remote-name> <branch-name>    push local master branch commits to remote repository
