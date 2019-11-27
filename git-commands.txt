@@ -1,7 +1,9 @@
 git config              ----------> .git/config     in current working directory.
 git config --global     ----------> ~/.gitconfig 
 git config --system     ----------> /etc/gitconfig
-git config --list or -l     list all configurations.
+git config --list or -l             list all configurations
+git config --global --list or -l    list global configurations 
+git config --global -e              -e is for editor, opens global gitconfig file in editor
 git config <property-name>  show value of property-name
 
 git help <verb>     show manual page for the verb(like config, add and branch)
@@ -116,3 +118,8 @@ remotes right before running this. You could do that like this:
 git fetch --all     git branch -vv
 
 git push <remote> --delete <branch>     deletes the remote branch
+
+
+---------------- Date 27 nov 2019 ---------------
+
+git version
