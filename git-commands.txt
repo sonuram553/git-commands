@@ -22,7 +22,7 @@ git diff --staged(or --cached)  compares the changes between staged files and fi
 
 git commit
 git commit -v   while committing shows the difference in the file.
-git commit -a   commit tracked file directly without using git add command.
+git commit -a   commit modified files directly without using git add command.
 
 git rm  to remove file from staging area as well as from current working directory
         and stage the deletion
@@ -57,6 +57,7 @@ git remote show <remote-name>   show details of remote name
 git fetch <remote-name or url>  to fetch from remote repository to local repository
 
 git pull    fetch from remote repository and merge to local repository
+git pull <remote-name> <branch-name>
 
 git push <remote-name> <branch-name>    push local branch commits to remote repository
 
@@ -94,7 +95,7 @@ git branch -v   to see the last commit on each branch
 git branch --merged     list the branches that are merged to the branch you are currently on
 git branch --no-merged  list the branches that are not merged to the branch you are currently on
 
-git push <remote-name> <branch-name>    
+git push <remote-name> <branch-name>  push commits on local branch to remote repository  
 git push <remote-name> <branch-name>:<new-branch-name>
 
 git config --global credential.helper cache     
@@ -104,7 +105,6 @@ git checkout -b serverfix origin/serverfix  This gives you a local branch that y
 
 
 ---------------- Date 19 nov 2019 ---------------
-
 git checkout -b <branch> <remote>/<branch>      shorter version(git checkout --track <remote>/<branch>)
 git checkout serverfix      If the branch name you’re trying to checkout (a) doesn’t exist and (b) exactly matches
                             a name on only one remote, Git will create a tracking branch for you
@@ -121,5 +121,18 @@ git push <remote> --delete <branch>     deletes the remote branch
 
 
 ---------------- Date 27 nov 2019 ---------------
-
 git version
+
+
+---------------- Date 28 nov 2019 ---------------
+git init
+git init <directory-name>   create a folder and initialize git
+
+git ls-files    list all tracked files
+
+
+---------------- Date 29 nov 2019 ---------------
+git add --all, -A, .    add changes from all tracked and untracked files
+git add -u, --update    update tracked files
+
+git rm <filename>   delete the tracked file and add deletion to staging area
