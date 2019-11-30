@@ -17,8 +17,21 @@ git status --short(or -s)
 
 
 ---------------- Date 11 nov 2019 ---------------
-git diff    compares the changes between the current files and staged files
+git diff                        compares the changes between the current files and staged files
 git diff --staged(or --cached)  compares the changes between staged files and files on last commit
+git diff HEAD                   compares the changes between the current files and files on last commit
+git difftool
+git difftool --staged
+git difftool HEAD
+
+git diff -- <filename>      limit diff to given filename only
+git difftool -- <filename>
+
+git diff <hashvalue1> <hashvalue2>
+git difftool <hashvalue1> <hashvalue2>
+
+git diff HEAD HEAD^     HEAD represents last commit and HEAD^ represents commit before last commit
+git difftool HEAD HEAD^
 
 git commit
 git commit -v   while committing shows the difference in the file.
@@ -139,3 +152,6 @@ git add -u, --update    update tracked files
 git rm <filename>   delete the tracked file and add deletion to staging area
 
 git log -- <filename>   list the commit history of the file
+
+
+---------------- Date 30 nov 2019 ---------------
