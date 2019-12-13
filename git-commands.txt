@@ -158,6 +158,7 @@ git branch <branch-name>    creates a new branch
 git branch -d <branch-name> deletes the branch
 
 git branch      list all local branches
+git branch -r   list only remote branches
 git branch -a   list all branches local as well as remote
 git branch -m <new-branch-name>     when on the current branch, rename the branch
 git branch -m <old-branch-name> <new-branch-name>   rename a branch from anywhere
@@ -176,3 +177,18 @@ git config --global mergetool.prompt false
 git config --global diff.tool p4merge
 git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
 git config --global difftool.prompt false
+
+
+---------------- Date 9 dec 2019 ---------------
+get fetch <remote>              fetch all remote branches
+get fetch <remote> <branch>     fetch only give branch
+
+
+---------------- Date 12 dec 2019 ---------------
+git rebase --abort      To checkout out the original and stop rebasing
+
+git rebase <branch> 
+git rebase --continue   If rebasing shows conflicts, then after resolving conflicts run this command to 
+                        complete rebasing
+git pull --rebase <remote> <branch>
+
