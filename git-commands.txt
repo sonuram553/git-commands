@@ -84,13 +84,21 @@ git remote remove <remote-name>
 
 git tag     list all tags
 git tag -l "v1.8.5*"    list only version 1.8.5 and related
-git tag -a <tagname>    -m "my version 1.4"     -a is to create annotated tag, add the tag to current commit
 git tag <tagname>       creates lightweight tag and add to current commit
-git show <tagname>      shows detail about the tag and commit it added to
 git show <hashvalue>    shows detail about the commit
+git show <tagname>      shows detail about the tag and commit it added to
+
+git tag --delete <tagname>
+
+git tag -a <tagname> -m "my version 1.4"    -a is to create annotated tag, add the tag to current commit
+git tag -a <tagname> <hashvalue>            apply tag to particular commit
+git tag -a <tagname> -f <new-hashvalue>     updates an existing tagname
+
+git difftool <tag1> <tag2>
 
 git push origin <tagname>   share single tag to remote
 git push origin --tags      share all the tags to remote
+git push <remote> :<tagname>    deletes tag in remote repo
 
 git config --global alias.co checkout       creates alias for checkout keyword, hence we can use command like [git co <branch-name>]
 git config --global alias.ci commit         creates alias for commit keyword, hence we can use commit like [git ci -m "message"]
@@ -215,3 +223,9 @@ git stash pop stash@{<index>}
 git stash branch <branch-name>  apply and then deletes last stash to the branch
 
 git ls-files        list all the files that git is tracking
+
+
+---------------- Date 18 dec 2019 ---------------
+git reset <hashvalue>       takes HEAD to given commit
+git reset HEAD^             takes HEAD to immediate previous commit
+git reflog 
