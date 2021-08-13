@@ -10,8 +10,13 @@ git config --global --list|-l 	list all configuration
 // path - <path>/etc/gitconfig
 git config --system --list|-l 	list all configuration
 
-git config --list|-l [--show-origin]    to view configurations from all three places, optionally we can
-                                        display source of each configuration with --show-origin
+// To view configurations from all three places, optionally we can
+// display source of each configuration with --show-origin
+git config --list|-l [--show-origin]    
 
-git config [--global|--system] --edit|-e	opens config file in an editor
-git config [--global|--system] <property-name>	show value of property-name
+git config [--local|--global|--system] --edit|-e	opens config file in an editor
+git config [--local|--global|--system] <property-name> [<value>]	show or set value of the property-name
+
+// A property can appear in multiple config files. Display which file Git is using
+// to set the value of the property 
+git config --show-origin <property-name>
