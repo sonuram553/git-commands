@@ -2,13 +2,6 @@
 // <> denotes variable
 // | or
 
-git help <verb>     show manual page for the verb(like config, add and branch)
-
-git init            initialize git repository in local directory
-
-git clone <url>     url of remote git repository
-git clone <url> <newDirectoryName>
-
 git status --short(or -s)
 
 
