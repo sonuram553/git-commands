@@ -13,3 +13,12 @@ initialize git repository in local directory
 
 copy a Git repository to local system  
 `git clone <url> [<newDirectoryName>]`
+
+`git status [--short|-s]`  
+`git add <path>|.`
+
+un stage a file or files  
+`git restore --stage <file>|.`
+
+discard changes from a file or files  
+`git restore <file>|.`
