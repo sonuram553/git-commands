@@ -37,5 +37,8 @@ remove a file and stage the deletion
 if the file is modified or in staging area then use the force removal 
 `git rm -f <file>`
 
-remove a file from git tracking
+remove a file from git tracking  
 `git rm --cached <file>`
+
+rename a file and stage the changes  
+`git mv file_from file_to`

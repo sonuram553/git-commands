@@ -19,26 +19,6 @@ git difftool HEAD HEAD^
 git diff <branch1> <branch2>
 git difftool <branch1> <branch2>
 
-
----------------- Date 13 nov 2019 ---------------
-git mv <from-filename> <to-filename>    used to rename or move a file in git
-
-git log
-git log -p      -p flag will show the difference between commits.
-git log -p -2   -2 flag will limit the output to last 2 entries. It can be any natural number
-git log --stat  shows commits with brief status about files addition or deletion
-git log --oneline
-git log --pretty=format:"%h - %an, %ar: %s" see options.png file
-git log --pretty=format:"%h %s" --graph     graph flag will show line diagram of commits
-git log -Sfunction_name     -S option will show the last commit that modified function_name.
-git log --<path>            here path is the name of file or directory to limit commits associated with that file
-git log --since=2.weeks
-git log --author
-git log --grep
-git log --author --grep --all-match
-example command      git log --pretty="%h - %s" --author=gitster --since="2008-10-01" \
-
-
 ---------------- Date 14 nov 2019 ---------------
 git remote      to see all remote servers configured for repository
 git remote -v   shows the url of remote servers
@@ -81,8 +61,6 @@ git config --global alias.cim "commit -m"   creates alias for "commit -m", hence
 
 git checkout <branch-name>  switch to branch(move HEAD pointer to given branch)
 git checkout -b <branch-name>   creates a branch and switch to it
-
-git log --oneline --all --graph
 
 
 ---------------- Date 18 nov 2019 ---------------
@@ -130,9 +108,6 @@ git ls-files    list all tracked files
 ---------------- Date 29 nov 2019 ---------------
 git add --all, -A, .    add changes from all tracked and untracked files
 git add -u, --update    update tracked files
-
-git log -- <filename>   list the commit history of the file
-
 
 ---------------- Date 5 dec 2019 ---------------
 git branch <branch-name>    creates a new branch
