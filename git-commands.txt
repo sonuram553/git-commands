@@ -19,14 +19,6 @@ git difftool HEAD HEAD^
 git diff <branch1> <branch2>
 git difftool <branch1> <branch2>
 
-git commit
-git commit -v   while committing shows the difference in the file.
-git commit -a   commit modified files directly without using git add command.
-
-git rm  to remove file from staging area as well as from current working directory
-        and stage the deletion
-git rm --cached <fileName>  to remove file from staging area
-
 
 ---------------- Date 13 nov 2019 ---------------
 git mv <from-filename> <to-filename>    used to rename or move a file in git
@@ -138,8 +130,6 @@ git ls-files    list all tracked files
 ---------------- Date 29 nov 2019 ---------------
 git add --all, -A, .    add changes from all tracked and untracked files
 git add -u, --update    update tracked files
-
-git rm <filename>   delete the tracked file and add deletion to staging area
 
 git log -- <filename>   list the commit history of the file
 
