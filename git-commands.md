@@ -28,8 +28,11 @@ discard changes from a file or files in the working directory
 create a commit  
 `git commit [-m <message>]`
 
-commit modified files directly without using git add command
+commit modified files directly without using git add command  
 `git commit -a` 
+
+update last commit  
+`git commit --amend`
 
 remove a file and stage the deletion  
 `git rm <file>`
@@ -41,4 +44,4 @@ remove a file from git tracking
 `git rm --cached <file>`
 
 rename a file and stage the changes  
-`git mv file_from file_to`
+`git mv file_from file_to` 

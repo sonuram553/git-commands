@@ -20,11 +20,6 @@ git diff <branch1> <branch2>
 git difftool <branch1> <branch2>
 
 ---------------- Date 14 nov 2019 ---------------
-git remote      to see all remote servers configured for repository
-git remote -v   shows the url of remote servers
-git remote add <shortname> <url>
-git remote show <remote-name>   show details of remote name
-
 git fetch <remote-name or url>  to fetch from remote repository to local repository
 
 git pull    fetch from remote repository and merge to local repository
