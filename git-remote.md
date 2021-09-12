@@ -13,3 +13,9 @@ add a remote repository
 
 show details of remote name  
 `git remote show <shortname>`  
+
+rename a remote  
+`git remote rename <shortname> <new-shortname>`
+
+remove a remote  
+`git remote remove|rm <shortname>`
