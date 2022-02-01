@@ -45,10 +45,6 @@ git config --global alias.co checkout       creates alias for checkout keyword, 
 git config --global alias.ci commit         creates alias for commit keyword, hence we can use commit like [git ci -m "message"]
 git config --global alias.cim "commit -m"   creates alias for "commit -m", hence we can use command like [git cim "message"]
 
-git checkout <branch-name>  switch to branch(move HEAD pointer to given branch)
-git checkout -b <branch-name>   creates a branch and switch to it
-
-
 ---------------- Date 18 nov 2019 ---------------
 git mergetool   provides visual representation to resolve conflicts
 git branch -v   to see the last commit on each branch
@@ -96,15 +92,11 @@ git add --all, -A, .    add changes from all tracked and untracked files
 git add -u, --update    update tracked files
 
 ---------------- Date 5 dec 2019 ---------------
-git branch <branch-name>    creates a new branch
-git branch -d <branch-name> deletes the branch
-
 git branch      list all local branches
 git branch -r   list only remote branches
 git branch -a   list all branches local as well as remote
 git branch -m <new-branch-name>     when on the current branch, rename the branch
 git branch -m <old-branch-name> <new-branch-name>   rename a branch from anywhere
-git checkout -b <branch-name>       creates a new branch and checkout to it
 
 git merge <branch-name> --no-ff    merge without fast forwarding
 

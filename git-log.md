@@ -30,4 +30,8 @@ if we specify a directory or file name, we can limit the log output to commits t
 to prevent the display of merge commits cluttering up your log history, simply add the log option --no-merges.  
 `git log --no-merges`   
 
+log commits for a specified branch  
+`git log <branch>`
 
+log commits for all branches  
+`git log --all`
