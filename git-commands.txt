@@ -126,32 +126,4 @@ git rebase --continue   If rebasing shows conflicts, then after resolving confli
                         complete rebasing
 git pull --rebase <remote> <branch>
 
-
----------------- Date 14 dec 2019 ---------------
-git stash           stashes only tracked files
-git stash -u        stashes both tracked and untracked files
-git stash list      list all stashes
-
-git stash apply     apply last stash
-git stash drop      deletes last stash
-git stash pop       apply and then deletes last stash
-
-git stash save <message>        stashes tracked files with a custom message
-git stash save -u <message>
-
-git stash clear     deletes all the stashes
-
-git stash show stash@{<index>}
-git stash apply stash@{<index>} applies particular stash
-git stash drop stash@{<index>} 
-git stash pop stash@{<index>}
-
-git stash branch <branch-name>  apply and then deletes last stash to the branch
-
 git ls-files        list all the files that git is tracking
-
-
----------------- Date 18 dec 2019 ---------------
-git reset <hashvalue>       takes HEAD to given commit
-git reset HEAD^             takes HEAD to immediate previous commit
-git reflog 
